@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --color-brand-50: #f5f3ff;
+  --color-brand-100: #ede9fe;
+  --color-brand-200: #ddd6fe;
+  --color-brand-300: #c4b5fd;
+  --color-brand-400: #a78bfa;
+  --color-brand-500: #8b5cf6;
+  --color-brand-600: #7c3aed;
+  --color-brand-700: #6d28d9;
+  --color-brand-800: #5b21b6;
+  --color-brand-900: #4c1d95;
+  --color-brand-950: #2e1065;
+}
+
+::selection { background: #ddd6fe; color: #2e1065; }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .7s cubic-bezier(.25,.46,.45,.94), transform .7s cubic-bezier(.25,.46,.45,.94);
+}
+.reveal.active { opacity: 1; transform: translateY(0); }
+.d1 { transition-delay: .1s; }
+.d2 { transition-delay: .2s; }
+.d3 { transition-delay: .3s; }
+.d4 { transition-delay: .4s; }
+.d5 { transition-delay: .5s; }
+.d6 { transition-delay: .6s; }
+.d7 { transition-delay: .7s; }
+
+.hero-bg { background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(139,92,246,.12) 0%, transparent 70%); }
+.cta-bg { background: linear-gradient(135deg, #4c1d95 0%, #2e1065 50%, #4c1d95 100%); }
+.grid-bg {
+  background-image: linear-gradient(to right, #f1f5f9 1px, transparent 1px), linear-gradient(to bottom, #f1f5f9 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.tool-card { transition: all .3s cubic-bezier(.25,.46,.45,.94); }
+.tool-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px -5px rgba(109,40,217,.15), 0 4px 10px -5px rgba(109,40,217,.08); }
+
+.feat-card { transition: all .3s ease; }
+.feat-card:hover { transform: translateY(-2px); border-color: #ddd6fe; }
+
+.faq-body { max-height: 0; opacity: 0; overflow: hidden; transition: max-height .4s cubic-bezier(.25,.46,.45,.94), opacity .3s ease, padding .3s ease; }
+.faq-body.open { max-height: 300px; opacity: 1; }
+.faq-chev { transition: transform .3s ease; }
+.faq-chev.open { transform: rotate(180deg); }
+
+.store-btn { transition: all .2s ease; }
+.store-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px -4px rgba(0,0,0,.15); }
+
+.float { animation: float 6s ease-in-out infinite; }
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+
+.grad-text { background: linear-gradient(135deg, #6d28d9, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+.glass { backdrop-filter: blur(16px) saturate(180%); -webkit-backdrop-filter: blur(16px) saturate(180%); }
