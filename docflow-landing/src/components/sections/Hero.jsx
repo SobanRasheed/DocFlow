@@ -4,19 +4,24 @@ import heroImg from "../../assets/hero.png";
 export default function Hero() {
   return (
     <section 
-      className="relative pt-20 pb-20 lg:pt-28 lg:pb-36 overflow-hidden hero-bg bg-no-repeat bg-right lg:bg-[length:auto_100%] xl:bg-[length:auto_110%] 2xl:bg-cover"
-      style={{
-        backgroundImage: `url(${heroImg})`,
-        backgroundPosition: 'right center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'max(1000px,100vw)',
-      }}
+      className="relative pt-20 pb-20 lg:pt-28 lg:pb-36 overflow-hidden"
     >
-      {/* Decorative gradients */}
+      {/* Hero image — hidden on mobile, visible on lg+ */}
+      <div
+        className="absolute inset-0 hidden lg:block -z-20"
+        style={{
+          backgroundImage: `url(${heroImg})`,
+          backgroundPosition: 'right center',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'max(1000px,100vw)',
+        }}
+      />
+
+      {/* Decorative gradients (visible on ALL screen sizes) */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-brand-200/20 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-brand-100/30 rounded-full blur-3xl -z-10" />
 
-      {/* Overlay to ensure text readability on smaller screens if the image bleeds under text */}
+      {/* Overlay gradient for text readability over the image on desktop */}
       <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent lg:via-white/70 lg:to-transparent -z-10" />
 
       <div className="relative max-w-7xl mx-auto px-6 z-10">
@@ -48,7 +53,7 @@ export default function Hero() {
           <Reveal delay={2}>
             <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-10 font-medium">
               PDF to Word, Excel to PDF, merge, split, compress
-              all the tools you need in one beautiful app. Keeps your files private.
+              all the tools you need in one app. Keeps your files private.
             </p>
           </Reveal>
 
