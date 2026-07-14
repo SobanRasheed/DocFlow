@@ -19,7 +19,7 @@ export const TOOLS = [
 export const FEATS = [
   { icon: "lucide:shield-check", title: "100% Private", desc: "Files never leave your device. All processing happens locally — we don't upload anything to any server.", bg: "bg-brand-50", color: "text-brand-600" },
   { icon: "lucide:zap", title: "Blazing Fast", desc: "Native performance powered by Flutter. Conversions finish in seconds, not minutes.", bg: "bg-amber-50", color: "text-amber-500" },
-  { icon: "lucide:wifi-off", title: "Works Offline", desc: "No internet? No problem. Every tool works without a connection — perfect for travel or remote areas.", bg: "bg-blue-50", color: "text-blue-500" },
+  { icon: "lucide:check-circle-2", title: "Highly Accurate", desc: "Advanced conversion algorithms ensure your formatting and layouts remain perfectly intact.", bg: "bg-blue-50", color: "text-blue-500" },
   { icon: "lucide:smartphone", title: "Beautiful Design", desc: "Clean, intuitive interface that follows platform conventions. Feels like it was made by Apple or Google.", bg: "bg-violet-50", color: "text-violet-500" },
   { icon: "lucide:infinity", title: "No Limits", desc: "No file size caps, no daily conversion limits, no watermarks. Use it as much as you want.", bg: "bg-rose-50", color: "text-rose-500" },
   { icon: "lucide:globe", title: "Cross-Platform", desc: "Built with Flutter for pixel-perfect consistency on both iOS and Android from a single codebase.", bg: "bg-cyan-50", color: "text-cyan-500" },
@@ -28,7 +28,7 @@ export const FEATS = [
 export const FAQS = [
   { q: "Is DocFlow really free?", a: "Yes, completely free with no hidden costs, no premium tiers, and no in-app purchases. All 8 tools are available to everyone at no charge." },
   { q: "Are my files uploaded to a server?", a: "No. All conversions happen locally on your device. Your files never leave your phone. This is one of our core principles — your documents, your privacy." },
-  { q: "Does it work without internet?", a: "Absolutely. Since all processing is done on-device, you don't need an internet connection to use any of the tools. Perfect for flights, commutes, or areas with poor connectivity." },
+
   { q: "Is there a file size limit?", a: "There are no artificial file size limits. The only constraint is your device's available memory. Most phones can handle files well over 100MB without any issues." },
   { q: "Will more tools be added in the future?", a: "Yes! We're actively developing new tools including PDF to PowerPoint, OCR (text recognition), e-signature, and password protection. Updates are free for all users." },
   { q: "Which platforms are supported?", a: "DocFlow is built with Flutter and supports both iOS (iPhone & iPad) and Android devices. A web version is also being considered for future releases." },
@@ -37,7 +37,7 @@ export const FAQS = [
 export const STATS = [
   { val: "8", label: "Conversion Tools" },
   { val: "0s", label: "Upload to Server" },
-  { val: "100%", label: "Offline Ready" },
+  { val: "100%", label: "Secure" },
   { val: "$0", label: "Forever Free" },
 ];
 

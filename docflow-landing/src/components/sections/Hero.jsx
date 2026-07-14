@@ -48,7 +48,7 @@ export default function Hero() {
           <Reveal delay={2}>
             <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-10 font-medium">
               PDF to Word, Excel to PDF, merge, split, compress
-              all the tools you need in one beautiful app. Works offline. Keeps your files private.
+              all the tools you need in one beautiful app. Keeps your files private.
             </p>
           </Reveal>
 
