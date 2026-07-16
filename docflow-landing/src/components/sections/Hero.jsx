@@ -5,7 +5,7 @@ import heroMobileImg from "../../assets/hero-mobile.png";
 export default function Hero() {
   return (
     <section 
-      className="relative pt-20 pb-20 lg:pt-28 lg:pb-36 overflow-hidden"
+      className="relative pt-20 pb-10 lg:pt-28 lg:pb-16 overflow-hidden"
     >
       {/* Hero image — hidden on mobile, visible on lg+ */}
       <div className="absolute inset-0 hidden lg:block -z-20 hero-desktop-bg" />

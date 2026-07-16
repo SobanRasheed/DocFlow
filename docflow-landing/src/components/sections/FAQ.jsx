@@ -10,7 +10,7 @@ export default function FAQ() {
   const toggle = useCallback((i) => setOpen((p) => (p === i ? null : i)), []);
 
   return (
-    <section id="faq" className="py-16 bg-slate-50/50 relative overflow-hidden">
+    <section id="faq" className="py-12 bg-slate-50/50 relative overflow-hidden">
       {/* Decorative gradients */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-100/40 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-200/20 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3" />

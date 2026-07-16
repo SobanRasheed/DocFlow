@@ -10,7 +10,7 @@ const steps = [
 
 export default function Steps() {
   return (
-    <section id="steps" className="py-16 bg-white">
+    <section id="steps" className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <Heading label="How It Works" title="Three steps. That's it." sub="No learning curve, no complicated settings. Just pick a tool and go." />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 relative">
