@@ -8,15 +8,7 @@ export default function Hero() {
       className="relative pt-20 pb-20 lg:pt-28 lg:pb-36 overflow-hidden"
     >
       {/* Hero image — hidden on mobile, visible on lg+ */}
-      <div
-        className="absolute inset-0 hidden lg:block -z-20"
-        style={{
-          backgroundImage: `url(${heroImg})`,
-          backgroundPosition: 'right center',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'max(1000px,100vw)',
-        }}
-      />
+      <div className="absolute inset-0 hidden lg:block -z-20 hero-desktop-bg" />
 
       {/* Decorative gradients (visible on ALL screen sizes) */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-brand-200/20 rounded-full blur-3xl -z-10" />
