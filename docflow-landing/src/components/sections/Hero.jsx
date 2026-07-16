@@ -1,5 +1,6 @@
 import Reveal from "../ui/Reveal";
 import heroImg from "../../assets/hero.png";
+import heroMobileImg from "../../assets/hero-mobile.png";
 
 export default function Hero() {
   return (
@@ -57,7 +58,15 @@ export default function Hero() {
             </p>
           </Reveal>
 
-
+          <Reveal delay={3}>
+            <div className="lg:hidden flex justify-center mb-10">
+              <img 
+                src={heroMobileImg} 
+                alt="Document conversion illustration" 
+                className="w-full max-w-[280px] sm:max-w-[320px] mx-auto object-contain"
+              />
+            </div>
+          </Reveal>
           
         </div>
       </div>
