@@ -55,7 +55,7 @@ export default function Hero() {
               <img 
                 src={heroMobileImg} 
                 alt="Document conversion illustration" 
-                className="w-full max-w-[280px] sm:max-w-[320px] mx-auto object-contain"
+                className="w-full max-w-[340px] sm:max-w-[420px] mx-auto object-contain"
               />
             </div>
           </Reveal>
