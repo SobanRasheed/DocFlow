@@ -1,14 +1,23 @@
 import Reveal from "../ui/Reveal";
 import heroImg from "../../assets/hero.png";
 import heroMobileImg from "../../assets/hero-mobile.png";
+import   hero from "../../assets/hero.mp4";
 
 export default function Hero() {
   return (
     <section 
       className="relative pt-20 pb-10 lg:pt-28 lg:pb-16 overflow-hidden"
     >
-      {/* Hero image — hidden on mobile, visible on lg+ */}
-      <div className="absolute inset-0 hidden lg:block -z-20 hero-desktop-bg" />
+      {/* Hero video — hidden on mobile, visible on lg+ */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 hidden lg:block -z-20 w-full h-full object-cover object-right"
+      >
+        <source src={hero} type="video/mp4" />
+      </video>
 
       {/* Decorative gradients (visible on ALL screen sizes) */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-brand-200/20 rounded-full blur-3xl -z-10" />
