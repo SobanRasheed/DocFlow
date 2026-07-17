@@ -1,5 +1,6 @@
 import { memo } from "react";
 import useReveal from "../../hooks/useReveal";
+import "./Reveal.css";
 
 export default memo(function Reveal({ children, delay, className = "" }) {
   const [ref, show] = useReveal();

@@ -1,0 +1,20 @@
+@reference "../../index.css";
+.tool-card-wrapper {
+  @apply h-full flex flex-col bg-white rounded-2xl border border-slate-200 p-6 cursor-default;
+}
+
+.tool-card-icon-wrapper {
+  @apply w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-colors;
+}
+
+.tool-card-title {
+  @apply text-base font-semibold text-slate-900 mb-1;
+}
+
+.tool-card-desc {
+  @apply text-[13px] text-slate-600 leading-relaxed flex-grow;
+}
+
+.tool-card-footer {
+  @apply mt-auto pt-4 flex items-center gap-1.5 text-[10px] font-semibold tracking-wide uppercase;
+}

@@ -1,0 +1,68 @@
+@reference "../../index.css";
+.footer {
+  @apply bg-slate-950 text-slate-400 pt-16 pb-8;
+}
+
+.footer-container {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+.footer-grid {
+  @apply grid grid-cols-1 md:grid-cols-4 gap-12 mb-12;
+}
+
+.footer-brand {
+  @apply md:col-span-2;
+}
+
+.footer-logo-link {
+  @apply flex items-center gap-2.5 mb-4;
+}
+
+.footer-logo-img {
+  @apply h-12 w-auto brightness-0 invert opacity-90;
+}
+
+.footer-desc {
+  @apply text-sm leading-relaxed text-slate-500 max-w-sm mb-6;
+}
+
+.footer-socials {
+  @apply flex items-center gap-3 mb-6;
+}
+
+.footer-social-link {
+  @apply w-9 h-9 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors;
+}
+
+.footer-social-icon {
+  @apply text-slate-400;
+}
+
+.footer-col-title {
+  @apply text-xs font-semibold text-slate-300 uppercase tracking-widest mb-4;
+}
+
+.footer-link-list {
+  @apply space-y-2.5;
+}
+
+.footer-link {
+  @apply text-sm hover:text-white transition-colors;
+}
+
+.footer-bottom {
+  @apply border-t border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4;
+}
+
+.footer-copyright {
+  @apply text-xs text-slate-600;
+}
+
+.footer-legal {
+  @apply flex items-center gap-4;
+}
+
+.footer-legal-link {
+  @apply text-xs text-slate-600 hover:text-slate-400 transition-colors;
+}

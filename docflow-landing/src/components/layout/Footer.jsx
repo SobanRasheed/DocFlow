@@ -1,23 +1,24 @@
 import Icon from "../ui/Icon";
 import { FOOTER_TOOLS, COMPANY, SOCIALS } from "../../data/data";
 import Logo from "../../assets/logo.svg";
+import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-400 pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          <div className="md:col-span-2">
-            <a href="#" className="flex items-center gap-2.5 mb-4">
-              <img src={Logo} alt="DocFlow" className="h-12 w-auto brightness-0 invert opacity-90" />
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-grid">
+          <div className="footer-brand">
+            <a href="#" className="footer-logo-link">
+              <img src={Logo} alt="DocFlow" className="footer-logo-img" />
             </a>
-            <p className="text-sm leading-relaxed text-slate-500 max-w-sm mb-6">
+            <p className="footer-desc">
               The privacy-first document converter. Convert, merge, split, and compress your files directly on your device — no uploads, no accounts, no cost.
             </p>
-            <div className="flex items-center gap-3 mb-6">
+            <div className="footer-socials">
               {SOCIALS.map((s) => (
-                <a key={s.label} href="#" className="w-9 h-9 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors" aria-label={s.label}>
-                  <Icon name={s.icon} size="text-base" className="text-slate-400" />
+                <a key={s.label} href="#" className="footer-social-link" aria-label={s.label}>
+                  <Icon name={s.icon} size="text-base" className="footer-social-icon" />
                 </a>
               ))}
             </div>
@@ -25,25 +26,25 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xs font-semibold text-slate-300 uppercase tracking-widest mb-4">Tools</h4>
-            <ul className="space-y-2.5">
-              {FOOTER_TOOLS.map((t) => <li key={t}><a href="#tools" className="text-sm hover:text-white transition-colors">{t}</a></li>)}
+            <h4 className="footer-col-title">Tools</h4>
+            <ul className="footer-link-list">
+              {FOOTER_TOOLS.map((t) => <li key={t}><a href="#tools" className="footer-link">{t}</a></li>)}
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs font-semibold text-slate-300 uppercase tracking-widest mb-4">Company</h4>
-            <ul className="space-y-2.5">
-              {COMPANY.map((c) => <li key={c}><a href="#" className="text-sm hover:text-white transition-colors">{c}</a></li>)}
+            <h4 className="footer-col-title">Company</h4>
+            <ul className="footer-link-list">
+              {COMPANY.map((c) => <li key={c}><a href="#" className="footer-link">{c}</a></li>)}
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-slate-600">© 2026 DocFlow. All rights reserved.</p>
-          <div className="flex items-center gap-4">
+        <div className="footer-bottom">
+          <p className="footer-copyright">© 2026 DocFlow. All rights reserved.</p>
+          <div className="footer-legal">
             {["Privacy", "Terms", "Cookies"].map((l) => (
-              <a key={l} href="#" className="text-xs text-slate-600 hover:text-slate-400 transition-colors">{l}</a>
+              <a key={l} href="#" className="footer-legal-link">{l}</a>
             ))}
           </div>
         </div>

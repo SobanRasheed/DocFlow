@@ -1,0 +1,40 @@
+@reference "../../index.css";
+.steps-section {
+  @apply py-12 bg-white;
+}
+
+.steps-container {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+.steps-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 relative;
+}
+
+.steps-line {
+  @apply hidden md:block absolute top-16 left-[20%] right-[20%] h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent;
+}
+
+.steps-item {
+  @apply text-center relative;
+}
+
+.steps-icon-wrapper {
+  @apply w-14 h-14 bg-brand-600 rounded-2xl flex items-center justify-center mx-auto mb-6 relative z-10 shadow-lg shadow-brand-600/25;
+}
+
+.steps-icon {
+  @apply text-white;
+}
+
+.steps-number {
+  @apply text-[10px] font-bold uppercase tracking-widest text-brand-600 mb-2;
+}
+
+.steps-title {
+  @apply text-lg font-semibold text-slate-900 mb-2;
+}
+
+.steps-desc {
+  @apply text-sm text-slate-400 leading-relaxed max-w-xs mx-auto;
+}

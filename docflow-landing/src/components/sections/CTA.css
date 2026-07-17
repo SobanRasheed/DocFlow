@@ -1,0 +1,40 @@
+@reference "../../index.css";
+.cta-section {
+  @apply py-12 relative overflow-hidden;
+}
+
+.cta-background {
+  @apply absolute inset-0 -z-10;
+}
+
+.cta-blob-1 {
+  @apply absolute top-0 left-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl;
+}
+
+.cta-blob-2 {
+  @apply absolute bottom-0 right-1/4 w-72 h-72 bg-brand-400/10 rounded-full blur-3xl;
+}
+
+.cta-container {
+  @apply relative max-w-3xl mx-auto px-6 text-center;
+}
+
+.cta-badge {
+  @apply inline-flex items-center gap-2 bg-white/10 border border-white/10 text-brand-300 text-xs font-medium px-4 py-1.5 rounded-full mb-8;
+}
+
+.cta-heading {
+  @apply text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white mb-6 leading-tight;
+}
+
+.cta-desc {
+  @apply text-lg text-brand-200/80 leading-relaxed max-w-xl mx-auto mb-10;
+}
+
+.cta-buttons {
+  @apply flex flex-col sm:flex-row items-center justify-center gap-4;
+}
+
+.cta-footer {
+  @apply text-xs text-brand-300/50 mt-8;
+}

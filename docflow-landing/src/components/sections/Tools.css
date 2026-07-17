@@ -1,0 +1,16 @@
+@reference "../../index.css";
+.tools-section {
+  @apply py-12 bg-slate-50/50 relative;
+}
+
+.tools-bg {
+  @apply absolute inset-0 opacity-40 -z-10;
+}
+
+.tools-container {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+.tools-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4;
+}

@@ -1,6 +1,7 @@
 import Heading from "../ui/Heading";
 import Reveal from "../ui/Reveal";
 import Icon from "../ui/Icon";
+import "./Steps.css";
 
 const steps = [
   { icon: "lucide:upload",   n: "01", title: "Upload your file",  desc: "Pick a file from your device, cloud storage, or drag and drop it in." },
@@ -10,20 +11,20 @@ const steps = [
 
 export default function Steps() {
   return (
-    <section id="steps" className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="steps" className="steps-section">
+      <div className="steps-container">
         <Heading label="How It Works" title="Three steps. That's it." sub="No learning curve, no complicated settings. Just pick a tool and go." />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 relative">
-          <div className="hidden md:block absolute top-16 left-[20%] right-[20%] h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent" />
+        <div className="steps-grid">
+          <div className="steps-line" />
           {steps.map((s, i) => (
             <Reveal key={s.n} delay={i * 2 + 1}>
-              <div className="text-center relative">
-                <div className="w-14 h-14 bg-brand-600 rounded-2xl flex items-center justify-center mx-auto mb-6 relative z-10 shadow-lg shadow-brand-600/25">
-                  <Icon name={s.icon} size="text-2xl" className="text-white" />
+              <div className="steps-item">
+                <div className="steps-icon-wrapper">
+                  <Icon name={s.icon} size="text-2xl" className="steps-icon" />
                 </div>
-                <div className="text-[10px] font-bold uppercase tracking-widest text-brand-600 mb-2">Step {s.n}</div>
-                <h3 className="text-lg font-semibold text-slate-900 mb-2">{s.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed max-w-xs mx-auto">{s.desc}</p>
+                <div className="steps-number">Step {s.n}</div>
+                <h3 className="steps-title">{s.title}</h3>
+                <p className="steps-desc">{s.desc}</p>
               </div>
             </Reveal>
           ))}

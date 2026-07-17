@@ -1,0 +1,28 @@
+@reference "../../index.css";
+.heading-wrapper {
+  @apply max-w-2xl mb-16;
+}
+
+.heading-center {
+  @apply text-center mx-auto;
+}
+
+.heading-left {
+  @apply text-left;
+}
+
+.heading-label-wrapper {
+  @apply inline-flex items-center gap-2 text-brand-700 text-xs font-medium uppercase tracking-widest mb-4;
+}
+
+.heading-line {
+  @apply w-8 h-px bg-brand-300;
+}
+
+.heading-title {
+  @apply text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900 mb-4;
+}
+
+.heading-sub {
+  @apply text-slate-500 text-lg leading-relaxed;
+}
