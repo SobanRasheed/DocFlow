@@ -60,14 +60,16 @@ export default function Hero() {
           {/* Right: hero video */}
           <Reveal delay={2} className="hero-media">
             <div className="hero-media-frame float">
-              <video
-                className="hero-video"
-                src="https://res.cloudinary.com/sxizosqy/video/upload/v1784361860/hero_vo5vzl.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-              />
+              <div className="hero-video-wrap">
+                <video
+                  className="hero-video"
+                  src="https://res.cloudinary.com/sxizosqy/video/upload/v1784361860/hero_vo5vzl.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                />
+              </div>
             </div>
           </Reveal>
         </div>
