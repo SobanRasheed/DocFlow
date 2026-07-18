@@ -3,7 +3,7 @@ import Icon from "../ui/Icon";
 import useScrollY from "../../hooks/useScrollY";
 import useActiveSection from "../../hooks/useActiveSection";
 import { NAV } from "../../data/data";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo.png";
 import "./Nav.css";
 
 export default function Nav() {
