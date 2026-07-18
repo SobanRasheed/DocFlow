@@ -1,0 +1,55 @@
+@reference "../../index.css";
+
+.solutions-section {
+  @apply py-20 relative;
+  background: var(--bg-2);
+}
+
+.solutions-container {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+.solutions-tabs {
+  @apply flex flex-wrap items-center justify-center gap-2 mb-10;
+}
+
+.solutions-tab {
+  @apply text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-full border transition-all duration-200 cursor-pointer;
+  border-color: var(--card-border);
+  color: var(--text-body);
+}
+
+.solutions-tab:hover {
+  color: var(--text-hi);
+  border-color: var(--text-muted);
+}
+
+.solutions-tab.active {
+  background: #D5FDA1;
+  border-color: #D5FDA1;
+  color: #0d1e32;
+}
+
+.solutions-panel {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center rounded-3xl p-8 lg:p-12;
+  background: var(--panel-bg);
+  border: 1px solid var(--card-border);
+}
+
+.solutions-panel-text {
+  @apply text-center lg:text-left;
+}
+
+.solutions-panel-title {
+  @apply text-2xl sm:text-3xl font-light tracking-tight mb-4;
+  color: var(--text-hi);
+}
+
+.solutions-panel-desc {
+  @apply leading-relaxed mb-6;
+  color: var(--text-body);
+}
+
+.solutions-panel-media {
+  @apply w-full;
+}

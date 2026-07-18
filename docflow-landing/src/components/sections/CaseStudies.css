@@ -1,0 +1,89 @@
+@reference "../../index.css";
+
+.cases-section {
+  @apply py-20 relative overflow-hidden;
+  background: linear-gradient(180deg, var(--bg-1) 0%, var(--hero-g1) 100%);
+}
+
+.cases-container {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+.cases-stats {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 text-center mb-16 pb-14;
+  border-bottom: 1px solid var(--divider);
+}
+
+.cases-stat-val {
+  @apply text-3xl sm:text-4xl font-bold mb-1;
+}
+
+.cases-stat-label {
+  @apply text-sm font-medium;
+  color: var(--text-muted);
+}
+
+/* carousel */
+.cases-carousel {
+  @apply relative;
+}
+
+.cases-track {
+  @apply flex gap-5 overflow-x-auto pb-4;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.cases-track::-webkit-scrollbar { display: none; }
+
+.case-card-wrapper {
+  @apply flex-shrink-0 w-[85%] sm:w-[46%] lg:w-[32%];
+  scroll-snap-align: start;
+}
+
+.case-card {
+  @apply h-full flex flex-col rounded-2xl p-7 transition-all duration-300;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+
+.case-card:hover {
+  border-color: rgba(0, 149, 255, 0.3);
+  transform: translateY(-4px);
+}
+
+.case-card-tag {
+  @apply self-start text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-6;
+  background: var(--chip-cyan-bg);
+  color: var(--chip-cyan-text);
+}
+
+.case-card-stat {
+  @apply text-3xl font-bold mb-1;
+  color: var(--lime-text);
+}
+
+.case-card-stat-desc {
+  @apply text-xs font-medium mb-5;
+  color: var(--text-muted);
+}
+
+.case-card-title {
+  @apply text-lg font-semibold leading-snug mb-6 flex-grow;
+  color: var(--text-hi);
+}
+
+.cases-nav {
+  @apply flex items-center justify-end gap-3 mt-4;
+}
+
+.cases-nav-btn {
+  @apply w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200 cursor-pointer;
+  border: 1px solid var(--card-border);
+  color: var(--text-hi);
+}
+
+.cases-nav-btn:hover {
+  background: #0095FF;
+  border-color: #0095FF;
+  color: #fff;
+}

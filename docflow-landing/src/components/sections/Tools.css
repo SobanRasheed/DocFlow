@@ -1,6 +1,8 @@
 @reference "../../index.css";
+
 .tools-section {
-  @apply py-12 bg-slate-50/50 relative;
+  @apply py-20 relative;
+  background: var(--bg-2);
 }
 
 .tools-bg {

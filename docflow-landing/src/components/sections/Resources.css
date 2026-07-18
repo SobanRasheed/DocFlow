@@ -1,0 +1,100 @@
+@reference "../../index.css";
+
+.resources-section {
+  @apply py-20;
+  background: var(--bg-1);
+}
+
+.resources-container {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+/* featured video row */
+.resources-featured {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center rounded-3xl p-8 lg:p-12 mb-20;
+  background: linear-gradient(135deg, rgba(0, 149, 255, 0.08), rgba(96, 207, 183, 0.05));
+  border: 1px solid var(--card-border);
+}
+
+.resources-featured-media {
+  @apply w-full;
+}
+
+.resources-featured-text {
+  @apply text-center lg:text-left;
+}
+
+.resources-featured-eyebrow {
+  @apply text-[11px] font-bold uppercase tracking-[0.2em] mb-4;
+  color: var(--eyebrow);
+}
+
+.resources-featured-title {
+  @apply text-2xl sm:text-3xl font-light tracking-tight mb-4;
+  color: var(--text-hi);
+}
+
+.resources-featured-desc {
+  @apply leading-relaxed mb-8 max-w-md mx-auto lg:mx-0;
+  color: var(--text-body);
+}
+
+/* carousel */
+.resources-carousel {
+  @apply relative;
+}
+
+.resources-track {
+  @apply flex gap-5 overflow-x-auto pb-4;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.resources-track::-webkit-scrollbar { display: none; }
+
+.resource-card-wrapper {
+  @apply flex-shrink-0 w-[85%] sm:w-[46%] lg:w-[24%];
+  scroll-snap-align: start;
+}
+
+.resource-card {
+  @apply h-full flex flex-col rounded-2xl p-6 transition-all duration-300;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+
+.resource-card:hover {
+  border-color: rgba(0, 149, 255, 0.3);
+  transform: translateY(-4px);
+}
+
+.resource-card-tag {
+  @apply self-start text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-5;
+  background: var(--chip-lime-bg);
+  color: var(--chip-lime-text);
+}
+
+.resource-card-title {
+  @apply text-base font-semibold leading-snug mb-2;
+  color: var(--text-hi);
+}
+
+.resource-card-desc {
+  @apply text-[13px] leading-relaxed mb-5 flex-grow;
+  color: var(--text-body);
+}
+
+.resources-nav {
+  @apply flex items-center justify-end gap-3 mt-4;
+}
+
+.resources-nav-btn {
+  @apply w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200 cursor-pointer;
+  border: 1px solid var(--card-border);
+  color: var(--text-hi);
+}
+
+.resources-nav-btn:hover {
+  background: #0095FF;
+  border-color: #0095FF;
+  color: #fff;
+}

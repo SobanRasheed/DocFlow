@@ -1,0 +1,63 @@
+@reference "../../index.css";
+
+.logo-carousel-section {
+  @apply py-14 overflow-hidden relative;
+  background: var(--bg-1);
+  border-bottom: 1px solid var(--divider);
+}
+
+.logo-carousel-heading {
+  @apply text-center max-w-2xl mx-auto px-6 mb-10;
+}
+
+.logo-carousel-title {
+  @apply text-2xl sm:text-3xl font-light tracking-tight mb-3;
+  color: var(--text-hi);
+}
+
+.logo-carousel-sub {
+  color: var(--text-body);
+}
+
+.logo-carousel-container {
+  @apply relative flex overflow-hidden w-full max-w-7xl mx-auto;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.logo-carousel-track {
+  @apply flex items-center justify-around shrink-0 min-w-full;
+  gap: 4rem; /* 64px */
+  padding-right: 4rem; /* Match gap to ensure seamless loop */
+  animation: scroll 20s linear infinite;
+}
+
+@media (min-width: 640px) {
+  .logo-carousel-track {
+    gap: 6rem; /* 96px */
+    padding-right: 6rem;
+  }
+}
+
+.logo-carousel-item {
+  @apply flex-shrink-0 flex flex-col items-center gap-2 opacity-40 hover:opacity-100 transition-opacity duration-300;
+  filter: grayscale(100%);
+}
+
+.logo-carousel-label {
+  @apply text-[10px] font-semibold uppercase tracking-widest;
+  color: var(--text-body);
+}
+
+.logo-carousel-item:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

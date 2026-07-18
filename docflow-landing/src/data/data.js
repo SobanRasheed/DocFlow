@@ -1,5 +1,6 @@
 export const NAV = [
   { label: "Tools", href: "#tools" },
+  { label: "Solutions", href: "#solutions" },
   { label: "How It Works", href: "#steps" },
   { label: "Features", href: "#features" },
   { label: "FAQ", href: "#faq" },
@@ -39,6 +40,73 @@ export const STATS = [
   { val: "0s", label: "Upload to Server" },
   { val: "100%", label: "Secure" },
   { val: "$0", label: "Forever Free" },
+];
+
+export const PERSONAS = [
+  { icon: "lucide:graduation-cap", title: "Students", desc: "Convert lecture notes, assignments, and study material on the go." },
+  { icon: "lucide:briefcase", title: "Professionals", desc: "Contracts, reports, and invoices — handled in seconds." },
+  { icon: "lucide:users", title: "Teams", desc: "Keep every document consistent and shareable across your team." },
+  { icon: "lucide:pen-tool", title: "Creators", desc: "Package portfolios, ebooks, and media into polished PDFs." },
+  { icon: "lucide:building-2", title: "Businesses", desc: "Process documents at scale without ever exposing your data." },
+];
+
+export const SOLUTIONS = [
+  {
+    key: "convert",
+    label: "Convert",
+    title: "Any format, converted instantly.",
+    desc: "PDF to Word, Excel to PDF, images to documents — high-fidelity conversions that keep your formatting perfectly intact, automatically.",
+  },
+  {
+    key: "merge",
+    label: "Merge & Split",
+    title: "One document from many. Many from one.",
+    desc: "Combine multiple PDFs into a single file, or extract exactly the pages you need — reorder, rotate, and rebuild in real time.",
+  },
+  {
+    key: "compress",
+    label: "Compress",
+    title: "Smaller files. Same quality.",
+    desc: "Shrink heavy documents for email and sharing while keeping text sharp and images crisp — optimized for every device and network.",
+  },
+  {
+    key: "privacy",
+    label: "Privacy",
+    title: "Your documents never leave your device.",
+    desc: "Every operation runs 100% locally. No uploads, no servers, no accounts — enterprise-grade privacy by default.",
+  },
+  {
+    key: "automation",
+    label: "Automation",
+    title: "Batch-process your entire library.",
+    desc: "Queue multiple files and let DocFlow handle the rest — convert, compress, and organize whole folders in one pass.",
+  },
+];
+
+export const CASE_STUDIES = [
+  { stat: "10× faster", statDesc: "than uploading to online converters", title: "How students turn lecture PDFs into editable notes in seconds", tag: "Education" },
+  { stat: "0 uploads", statDesc: "everything processed on-device", title: "Why legal teams trust DocFlow with confidential contracts", tag: "Legal" },
+  { stat: "80% smaller", statDesc: "files after one-tap compression", title: "How freelancers send heavy portfolios over any connection", tag: "Freelance" },
+  { stat: "100+ files", statDesc: "merged into one clean report", title: "How managers assemble monthly reports without a desktop", tag: "Business" },
+];
+
+export const TESTIMONIALS = [
+  { quote: "DocFlow has been a game changer. It owns the whole process from start to finish — I converted my entire semester's notes in one afternoon. Fast, private, and it just works.", name: "Sarah K.", role: "Graduate Student" },
+  { quote: "We handle sensitive client contracts daily. Knowing files never leave the device is the reason DocFlow is the only converter we allow on company phones.", name: "Miguel R.", role: "Legal Operations Lead" },
+  { quote: "The compression alone is worth it. I send design portfolios to clients over hotel Wi-Fi and they arrive in seconds, looking exactly like the originals.", name: "Ayesha T.", role: "Freelance Designer" },
+];
+
+export const SHOWCASE = [
+  { name: "DocFlow Convert", title: "The Perfect Conversion, Every Time", desc: "Automated format conversion with layout-aware processing — your fonts, tables, and images arrive exactly where you left them.", video: "convert" },
+  { name: "DocFlow Merge", title: "More Documents, Less Busywork", desc: "Smart merging, page-level splitting, and drag-to-reorder — for every document your work needs to ship.", video: "merge" },
+  { name: "DocFlow Compress", title: "Heavy Files, Made Light", desc: "Content-aware compression that reduces file size dramatically while protecting readability and image quality.", video: "compress" },
+];
+
+export const RESOURCES = [
+  { tag: "Guide", title: "Need-to-Know Guide to Document Conversion", desc: "Formats, fidelity, and how to pick the right tool for every file." },
+  { tag: "Report", title: "Why On-Device Processing Is the Future", desc: "The business case for keeping documents off the cloud." },
+  { tag: "Tutorial", title: "Take the Work Out of Paperwork", desc: "Batch conversions, merge workflows, and compression presets." },
+  { tag: "Article", title: "Heavy Attachments Are Costing You Time", desc: "How to build a lightweight document pipeline on your phone." },
 ];
 
 export const FOOTER_TOOLS = ["PDF to Word", "Word to PDF", "PDF to Excel", "Excel to PDF", "Merge PDF", "Split PDF", "Compress PDF", "Image to PDF"];

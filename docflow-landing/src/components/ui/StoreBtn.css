@@ -1,14 +1,19 @@
 @reference "../../index.css";
+
 .store-btn-wrapper {
   @apply inline-flex items-center gap-5 pl-6 pr-10 py-5 rounded-2xl;
 }
 
-.store-btn-light {
-  @apply bg-white hover:bg-slate-50 text-slate-900;
+.store-btn-light,
+.store-btn-dark {
+  color: var(--text-hi);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
 }
 
-.store-btn-dark {
-  @apply bg-slate-900 hover:bg-slate-800 text-white;
+.store-btn-light:hover,
+.store-btn-dark:hover {
+  background: var(--hover-bg);
 }
 
 .store-btn-icon {
@@ -20,7 +25,8 @@
 }
 
 .store-btn-subtitle {
-  @apply text-xs font-medium text-slate-400 leading-none mb-1;
+  @apply text-xs font-medium leading-none mb-1;
+  color: var(--text-body);
 }
 
 .store-btn-title {

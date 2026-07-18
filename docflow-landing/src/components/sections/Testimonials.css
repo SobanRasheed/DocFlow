@@ -1,0 +1,86 @@
+@reference "../../index.css";
+
+.testi-section {
+  @apply py-20 relative overflow-hidden;
+  background: var(--bg-2);
+}
+
+.testi-blob {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full blur-3xl -z-0;
+  background: rgba(0, 149, 255, 0.06);
+}
+
+.testi-container {
+  @apply relative max-w-4xl mx-auto px-6 z-10;
+}
+
+.testi-card {
+  @apply rounded-3xl p-8 sm:p-12 text-center;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+
+.testi-quote-icon {
+  @apply inline-block mb-6;
+  color: #0095FF;
+  transform: scaleX(-1);
+}
+
+.testi-quote {
+  @apply text-xl sm:text-2xl font-light leading-relaxed mb-8;
+  color: var(--text-hi);
+  min-height: 7.5rem;
+}
+
+.testi-author {
+  @apply flex items-center justify-center gap-3 mb-8;
+}
+
+.testi-avatar {
+  @apply w-11 h-11 rounded-full flex items-center justify-center text-base font-bold text-white;
+  background: linear-gradient(135deg, #0095FF, #60CFB7);
+}
+
+.testi-author-info {
+  @apply text-left;
+}
+
+.testi-name {
+  @apply text-sm font-semibold;
+  color: var(--text-hi);
+}
+
+.testi-role {
+  @apply text-xs;
+  color: var(--text-muted);
+}
+
+.testi-nav {
+  @apply flex items-center justify-center gap-6;
+}
+
+.testi-nav-btn {
+  @apply w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 cursor-pointer;
+  border: 1px solid var(--card-border);
+  color: var(--text-hi);
+}
+
+.testi-nav-btn:hover {
+  background: #0095FF;
+  border-color: #0095FF;
+  color: #fff;
+}
+
+.testi-dots {
+  @apply flex items-center gap-2;
+}
+
+.testi-dot {
+  @apply w-2 h-2 rounded-full transition-all duration-300 cursor-pointer;
+  background: var(--dot-bg);
+}
+
+.testi-dot.active {
+  @apply w-6;
+  background: #0095FF;
+}

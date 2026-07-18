@@ -19,13 +19,13 @@ export default function CTA() {
 
         <Reveal delay={1}>
           <h2 className="cta-heading">
-            Stop uploading your files<br className="hidden sm:block" /> to random websites.
+            Ready to start using DocFlow?
           </h2>
         </Reveal>
 
         <Reveal delay={2}>
           <p className="cta-desc">
-            Download DocFlow and convert documents privately on your device. Free forever, no account needed.
+            Create your documents' best versions in seconds. Free forever, no account needed — and your files never leave your device.
           </p>
         </Reveal>
 

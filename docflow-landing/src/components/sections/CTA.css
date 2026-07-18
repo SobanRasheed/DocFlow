@@ -1,6 +1,7 @@
 @reference "../../index.css";
+
 .cta-section {
-  @apply py-12 relative overflow-hidden;
+  @apply py-20 relative overflow-hidden;
 }
 
 .cta-background {
@@ -8,11 +9,13 @@
 }
 
 .cta-blob-1 {
-  @apply absolute top-0 left-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl;
+  @apply absolute top-0 left-1/4 w-96 h-96 rounded-full blur-3xl;
+  background: rgba(0, 149, 255, 0.08);
 }
 
 .cta-blob-2 {
-  @apply absolute bottom-0 right-1/4 w-72 h-72 bg-brand-400/10 rounded-full blur-3xl;
+  @apply absolute bottom-0 right-1/4 w-72 h-72 rounded-full blur-3xl;
+  background: rgba(96, 207, 183, 0.06);
 }
 
 .cta-container {
@@ -20,15 +23,19 @@
 }
 
 .cta-badge {
-  @apply inline-flex items-center gap-2 bg-white/10 border border-white/10 text-brand-300 text-xs font-medium px-4 py-1.5 rounded-full mb-8;
+  @apply inline-flex items-center gap-2 text-accent-blue text-xs font-semibold px-4 py-1.5 rounded-full mb-8;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
 }
 
 .cta-heading {
-  @apply text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white mb-6 leading-tight;
+  @apply text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight mb-6 leading-tight;
+  color: var(--text-hi);
 }
 
 .cta-desc {
-  @apply text-lg text-brand-200/80 leading-relaxed max-w-xl mx-auto mb-10;
+  @apply text-lg leading-relaxed max-w-xl mx-auto mb-10;
+  color: var(--text-body);
 }
 
 .cta-buttons {
@@ -36,5 +43,6 @@
 }
 
 .cta-footer {
-  @apply text-xs text-brand-300/50 mt-8;
+  @apply text-xs mt-8;
+  color: var(--text-faint);
 }

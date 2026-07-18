@@ -1,6 +1,8 @@
 @reference "../../index.css";
+
 .stats-section {
-  @apply py-12 bg-white border-y border-slate-100;
+  @apply py-16 border-y border-white/5;
+  background: #0d1e32;
 }
 
 .stats-container {
@@ -13,8 +15,9 @@
 
 .stats-val {
   @apply text-3xl sm:text-4xl font-bold mb-1;
+  color: #60CFB7;
 }
 
 .stats-label {
-  @apply text-sm text-slate-400 font-medium;
+  @apply text-sm text-slate-500 font-medium;
 }

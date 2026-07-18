@@ -8,7 +8,7 @@ export default function Tools() {
     <section id="tools" className="tools-section">
       <div className="tools-bg grid-bg" />
       <div className="tools-container">
-        <Heading label="All Tools" title="Every conversion you need" sub="Eight powerful tools, one simple interface. No subscriptions, no limits on file size." />
+        <Heading label="All Tools" title="Every Stage of Your Document's Lifecycle, Connected" sub="Eight powerful tools, one simple interface. No subscriptions, no limits on file size." />
         <div className="tools-grid">
           {TOOLS.map((t, i) => <ToolCard key={t.title} tool={t} delay={i + 1} />)}
         </div>

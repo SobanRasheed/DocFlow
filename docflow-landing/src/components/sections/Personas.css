@@ -1,0 +1,45 @@
+@reference "../../index.css";
+
+.personas-section {
+  @apply py-20;
+  background: var(--bg-1);
+}
+
+.personas-container {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+.personas-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4;
+}
+
+.persona-card {
+  @apply h-full flex flex-col rounded-2xl p-6 transition-all duration-300;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+
+.persona-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 149, 255, 0.35);
+  box-shadow: 0 12px 40px -12px rgba(0, 149, 255, 0.25);
+}
+
+.persona-icon-wrapper {
+  @apply w-11 h-11 rounded-xl flex items-center justify-center mb-4;
+  background: rgba(0, 149, 255, 0.12);
+}
+
+.persona-icon {
+  color: #0D9AFF;
+}
+
+.persona-title {
+  @apply text-base font-semibold mb-1.5;
+  color: var(--text-hi);
+}
+
+.persona-desc {
+  @apply text-[13px] leading-relaxed;
+  color: var(--text-body);
+}

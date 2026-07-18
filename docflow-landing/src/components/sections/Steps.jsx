@@ -13,7 +13,7 @@ export default function Steps() {
   return (
     <section id="steps" className="steps-section">
       <div className="steps-container">
-        <Heading label="How It Works" title="Three steps. That's it." sub="No learning curve, no complicated settings. Just pick a tool and go." />
+        <Heading label="How It Works" title="Three Steps. That's It." sub="No learning curve, no complicated settings. Just pick a tool and go." />
         <div className="steps-grid">
           <div className="steps-line" />
           {steps.map((s, i) => (
