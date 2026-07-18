@@ -40,17 +40,16 @@
 }
 
 .logo-carousel-item {
-  @apply flex-shrink-0 flex flex-col items-center gap-2 opacity-40 hover:opacity-100 transition-opacity duration-300;
-  filter: grayscale(100%);
+  @apply flex-shrink-0 flex flex-col items-center gap-2;
+}
+
+.logo-carousel-img {
+  @apply h-10 w-10 object-contain;
 }
 
 .logo-carousel-label {
   @apply text-[10px] font-semibold uppercase tracking-widest;
   color: var(--text-body);
-}
-
-.logo-carousel-item:hover {
-  filter: grayscale(0%);
 }
 
 @keyframes scroll {

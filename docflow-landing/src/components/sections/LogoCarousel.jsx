@@ -1,18 +1,17 @@
 import Reveal from "../ui/Reveal";
 import Icon from "../ui/Icon";
+import pdfLogo from "../../assets/pdf.png";
+import wordLogo from "../../assets/word.png";
+import excelLogo from "../../assets/excel.png";
+import powerpointLogo from "../../assets/powerpoint.png";
 import "./LogoCarousel.css";
 
 const ICONS = [
-  { name: "lucide:file-text", color: "text-blue-400", label: "PDF" },
-  { name: "lucide:file-type", color: "text-red-400", label: "Word" },
-  { name: "lucide:table-2", color: "text-emerald-400", label: "Excel" },
+  { img: pdfLogo, label: "PDF" },
+  { img: wordLogo, label: "Word" },
+  { img: excelLogo, label: "Excel" },
   { name: "lucide:image", color: "text-pink-400", label: "Images" },
-  { name: "lucide:presentation", color: "text-orange-400", label: "Slides" },
-  { name: "lucide:file-audio", color: "text-purple-400", label: "Audio" },
-  { name: "lucide:file-video", color: "text-indigo-400", label: "Video" },
-  { name: "lucide:archive", color: "text-yellow-400", label: "Archives" },
-  { name: "lucide:file-json", color: "text-green-400", label: "JSON" },
-  { name: "lucide:file-code", color: "text-cyan-400", label: "Code" }
+  { img: powerpointLogo, label: "Powerpoint" },
 ];
 
 export default function LogoCarousel() {
@@ -30,7 +29,11 @@ export default function LogoCarousel() {
         <div className="logo-carousel-track">
           {ICONS.map((icon, i) => (
             <div key={`first-${i}`} className="logo-carousel-item">
-              <Icon name={icon.name} size="text-4xl" className={icon.color} />
+              {icon.img ? (
+                <img src={icon.img} alt={icon.label} className="logo-carousel-img" />
+              ) : (
+                <Icon name={icon.name} size="text-4xl" className={icon.color} />
+              )}
               <span className="logo-carousel-label">{icon.label}</span>
             </div>
           ))}
@@ -38,7 +41,11 @@ export default function LogoCarousel() {
         <div className="logo-carousel-track" aria-hidden="true">
           {ICONS.map((icon, i) => (
             <div key={`second-${i}`} className="logo-carousel-item">
-              <Icon name={icon.name} size="text-4xl" className={icon.color} />
+              {icon.img ? (
+                <img src={icon.img} alt="" className="logo-carousel-img" />
+              ) : (
+                <Icon name={icon.name} size="text-4xl" className={icon.color} />
+              )}
               <span className="logo-carousel-label">{icon.label}</span>
             </div>
           ))}

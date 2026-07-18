@@ -19,7 +19,7 @@
 }
 
 .nav-logo-img {
-  @apply h-12 w-auto;
+  @apply h-20 w-auto;
 }
 
 .nav-desktop-links {
