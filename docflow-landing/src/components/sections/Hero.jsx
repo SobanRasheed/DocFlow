@@ -1,5 +1,4 @@
 import Reveal from "../ui/Reveal";
-import VideoPlaceholder from "../ui/VideoPlaceholder";
 import "./Hero.css";
 
 const HERO_STATS = [
@@ -58,10 +57,17 @@ export default function Hero() {
             </Reveal>
           </div>
 
-          {/* Right: hero video slot — drop your <video> in here later */}
+          {/* Right: hero video */}
           <Reveal delay={2} className="hero-media">
             <div className="hero-media-frame float">
-              <VideoPlaceholder label="Hero video" ratio="4/3" />
+              <video
+                className="hero-video"
+                src="https://res.cloudinary.com/sxizosqy/video/upload/v1784361860/hero_vo5vzl.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
             </div>
           </Reveal>
         </div>
