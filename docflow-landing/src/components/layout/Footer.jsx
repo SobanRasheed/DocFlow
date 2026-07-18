@@ -1,6 +1,6 @@
 import Icon from "../ui/Icon";
 import { FOOTER_TOOLS, COMPANY, SOCIALS } from "../../data/data";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo.png";
 import "./Footer.css";
 
 export default function Footer() {

@@ -29,14 +29,10 @@
 }
 
 .footer-logo-img {
-  @apply h-12 w-auto brightness-0 invert opacity-70;
+  @apply h-20 w-auto brightness-0 invert opacity-70;
 }
 
-@media (prefers-color-scheme: light) {
-  .footer-logo-img {
-    @apply invert-0;
-  }
-}
+
 
 .footer-desc {
   @apply text-sm leading-relaxed max-w-sm mb-6;
